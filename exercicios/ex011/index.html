@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagine dinamicas</h1>
+    <p>Tente Abrir esse site em varios dispositivos diferentes ou simplesmente aumenta e diminue o tamanho do seu navegador.</p>
+
+    <picture>
+        <!--tag picture e usado para criar imagens dinamicas  usando a source media type-->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagen flexivel"><!--sempre deixar uma folga para nao aparecer a bara de rolagem 50 min  -->
+    </picture>
+</body>
+</html>
